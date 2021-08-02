@@ -1,0 +1,142 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\epiccini\\Desktop\\test\\PdfiumViewer-.netCore\\PdfiumViewerCoreDemo\\PdfiumViewerCoreDemo.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\epiccini\\Desktop\\test\\PdfiumViewer-.netCore\\PdfiumViewerCoreDemo\\PdfiumViewerCoreDemo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\epiccini\\Desktop\\test\\PdfiumViewer-.netCore\\PdfiumViewerCoreDemo\\PdfiumViewerCoreDemo.csproj",
+        "projectName": "PdfiumViewerCoreDemo",
+        "projectPath": "C:\\Users\\epiccini\\Desktop\\test\\PdfiumViewer-.netCore\\PdfiumViewerCoreDemo\\PdfiumViewerCoreDemo.csproj",
+        "packagesPath": "C:\\Users\\epiccini\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\epiccini\\Desktop\\test\\PdfiumViewer-.netCore\\PdfiumViewerCoreDemo\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\epiccini\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {
+              "C:\\Users\\epiccini\\Desktop\\test\\PdfiumViewer-.netCore\\PdfiumViewer\\PdfiumViewer.csproj": {
+                "projectPath": "C:\\Users\\epiccini\\Desktop\\test\\PdfiumViewer-.netCore\\PdfiumViewer\\PdfiumViewer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "PdfiumViewer.Native.x86.v8-xfa": {
+              "target": "Package",
+              "version": "[2018.4.8.256, )"
+            },
+            "PdfiumViewer.Native.x86_64.v8-xfa": {
+              "target": "Package",
+              "version": "[2018.4.8.256, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\epiccini\\Desktop\\test\\PdfiumViewer-.netCore\\PdfiumViewer\\PdfiumViewer.csproj": {
+      "version": "2.14.2",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\epiccini\\Desktop\\test\\PdfiumViewer-.netCore\\PdfiumViewer\\PdfiumViewer.csproj",
+        "projectName": "PdfiumViewerCore",
+        "projectPath": "C:\\Users\\epiccini\\Desktop\\test\\PdfiumViewer-.netCore\\PdfiumViewer\\PdfiumViewer.csproj",
+        "packagesPath": "C:\\Users\\epiccini\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\epiccini\\Desktop\\test\\PdfiumViewer-.netCore\\PdfiumViewer\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\epiccini\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
