@@ -2,7 +2,7 @@
 using System.Drawing.Printing;
 using System.IO;
 
-namespace PdfiumViewerCoreDemo
+namespace PdfiumCoreCoreDemo
 {
     internal class Program
     {
@@ -12,7 +12,7 @@ namespace PdfiumViewerCoreDemo
 
             using (Stream s = new MemoryStream(pdfBytes))
             {
-                var pdfDoc = PdfiumViewer.PdfDocument.Load(s);
+                var pdfDoc = PdfiumCore.PdfDocument.Load(s);
 
                 #region PRINT TEST
 

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "4R2cOAJ1P5VWbsjj7AQfNsnssTO7dBbRkkc61QqGIW8r/5bWwTs3nNMB0BzV0XQDIgh/1KU9sXinZHJTxS1BpQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\epiccini\\Desktop\\test\\PdfiumViewerCore\\PdfiumNetCore\\PdfiumCore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\epiccini\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\epiccini\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\epiccini\\.nuget\\packages\\pdfiumviewer.native.x86.v8-xfa\\2018.4.8.256\\pdfiumviewer.native.x86.v8-xfa.2018.4.8.256.nupkg.sha512",
+    "C:\\Users\\epiccini\\.nuget\\packages\\pdfiumviewer.native.x86_64.v8-xfa\\2018.4.8.256\\pdfiumviewer.native.x86_64.v8-xfa.2018.4.8.256.nupkg.sha512",
+    "C:\\Users\\epiccini\\.nuget\\packages\\system.drawing.common\\5.0.2\\system.drawing.common.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
