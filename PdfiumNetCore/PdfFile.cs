@@ -155,8 +155,10 @@ namespace PdfiumCore
             // Depending on whether XFA support is built into the PDFium library, the version
             // needs to be 1 or 2. We don't really care, so we just try one or the other.
 
-            // Enricosoft 2021-08-02: before it was i<=2! If 2 this causes exception (memory corruption)
-            for (int i = 1; i <= 1; i++)
+            // Commented because we don't need Form Fill feature to print documents and if
+            // _form IntPtr id != Zero, it causes "AccessViolationException"
+            /*
+            for (int i = 1; i <= 2; i++)
             {
                 _formCallbacks.version = i;
 
@@ -164,6 +166,7 @@ namespace PdfiumCore
                 if (_form != IntPtr.Zero)
                     break;
             }
+            */
 
             NativeMethods.FPDF_SetFormFieldHighlightColor(_form, 0, 0xFFE4DD);
             NativeMethods.FPDF_SetFormFieldHighlightAlpha(_form, 100);
@@ -689,7 +692,8 @@ namespace PdfiumCore
                 if (_form != IntPtr.Zero)
                 {
                     NativeMethods.FORM_DoDocumentAAction(_form, NativeMethods.FPDFDOC_AACTION.WC);
-                    NativeMethods.FPDFDOC_ExitFormFillEnvironment(_form);
+                    // Commented because we don't need Form Fill feature to print documents
+                    //NativeMethods.FPDFDOC_ExitFormFillEnvironment(_form);
                     _form = IntPtr.Zero;
                 }
 

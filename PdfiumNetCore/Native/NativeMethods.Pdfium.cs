@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using System.Runtime.ExceptionServices;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -114,6 +115,7 @@ namespace PdfiumCore
             }
         }
 
+        [HandleProcessCorruptedStateExceptions]
         public static void FPDFDOC_ExitFormFillEnvironment(IntPtr hHandle)
         {
             lock (LockString)
@@ -124,7 +126,7 @@ namespace PdfiumCore
                 {
                     Imports.FPDFDOC_ExitFormFillEnvironment(hHandle);
                 }
-                catch (Exception ex)
+                catch (AccessViolationException ex)
                 {
                     Console.WriteLine(ex);
                 }
