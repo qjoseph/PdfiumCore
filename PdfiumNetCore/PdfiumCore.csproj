@@ -8,10 +8,12 @@
     <PackageId>PdfiumCore</PackageId>
     <Description>Pdfium wrapper for .net 5 cross-platform (Windows form removed)</Description>
     <Copyright>@ 2021 Enricosoft</Copyright>
-    <Version>1.0.0.0</Version>
+    <Version>1.0.0.1</Version>
     <AssemblyName>PdfiumCore</AssemblyName>
     <RootNamespace>PdfiumCore</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Enricosoft</Authors>
+    <PackageTags>pdfium pdf .netcore print</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net5.0-windows|AnyCPU'">

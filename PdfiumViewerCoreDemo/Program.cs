@@ -85,6 +85,8 @@ namespace PdfiumCoreCoreDemo
                 }
 
                 #endregion PRINT TEST
+
+                Console.ReadLine();
             }
         }
     }
