@@ -10,3 +10,9 @@ The goals of this project are:
 - Fix bugs in the original implementation (like AccessViolationException, etc)
 
 The scope of this project is to consume this lib to print pdf through SpoolName (not to EDIT pdfs!)
+
+
+NEXT STEPS:
+- Build the latest pdfium c++ releases x86 and x64
+- Create a minimal wrapper specific for the spoolname print calling only the necessary pdfium c++ methods
+- Rename the project in "PdfiumCorePrint"
