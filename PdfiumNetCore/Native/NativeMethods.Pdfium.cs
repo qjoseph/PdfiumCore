@@ -10,7 +10,7 @@ using System.Text;
 
 namespace PdfiumCore
 {
-    partial class NativeMethods
+    internal partial class NativeMethods
     {
         // Interned strings are cached over AppDomains. This means that when we
         // lock on this string, we actually lock over AppDomain's. The Pdfium
