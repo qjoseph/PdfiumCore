@@ -7,7 +7,7 @@
     <Product>PdfiumCore</Product>
     <PackageId>PdfiumCore</PackageId>
     <Description>Pdfium wrapper for .net 5 cross-platform (Windows form removed)</Description>
-    <Copyright>@ 2021 Enricosoft</Copyright>
+    <Copyright>@ 2022 Enricosoft</Copyright>
     <Version>1.0.0.2</Version>
     <AssemblyName>PdfiumCore</AssemblyName>
     <RootNamespace>PdfiumCore</RootNamespace>
