@@ -5,7 +5,7 @@
     <UseWindowsForms>false</UseWindowsForms>
     <Company>Enricosoft</Company>
     <Product>PdfiumCore</Product>
-    <PackageId>PdfiumCore</PackageId>
+    <PackageId>PdfiumCore_Custom</PackageId>
     <Description>Pdfium wrapper for .net 5 cross-platform (Windows form removed)</Description>
     <Copyright>@ 2022 Enricosoft</Copyright>
     <Version>1.0.0.3</Version>
@@ -16,6 +16,8 @@
     <PackageTags>pdfium pdf .netcore print</PackageTags>
     <EnableNETAnalyzers>false</EnableNETAnalyzers>
     <SonarQubeExclude>true</SonarQubeExclude>
+    <Title>PdfiumCore Custom</Title>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net5.0-windows|AnyCPU'">
