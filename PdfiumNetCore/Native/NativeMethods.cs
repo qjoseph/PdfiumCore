@@ -1,10 +1,10 @@
-﻿using Microsoft.Win32.SafeHandles;
-using System;
+﻿using System;
 using System.Drawing;
-using System.IO;
 using System.Runtime.ConstrainedExecution;
 using System.Runtime.InteropServices;
 using System.Security.Permissions;
+
+using Microsoft.Win32.SafeHandles;
 
 namespace PdfiumCore
 {
@@ -13,13 +13,12 @@ namespace PdfiumCore
         static NativeMethods()
         {
             // First try the custom resolving mechanism.
-
             string fileName = PdfiumResolver.GetPdfiumFileName();
+
             if (fileName != null && File.Exists(fileName) && LoadLibrary(fileName) != IntPtr.Zero)
                 return;
 
             // Load the platform dependent Pdfium.dll if it exists.
-
             if (!TryLoadNativeLibrary(AppDomain.CurrentDomain.RelativeSearchPath))
                 TryLoadNativeLibrary(Path.GetDirectoryName(typeof(NativeMethods).Assembly.Location));
         }
@@ -29,8 +28,10 @@ namespace PdfiumCore
             if (path == null)
                 return false;
 
-            path = Path.Combine(path, IntPtr.Size == 4 ? "x86" : "x64");
-            path = Path.Combine(path, "Pdfium.dll");
+            path = Path.Combine(path, "runtimes");
+            path = Path.Combine(path, IntPtr.Size == 4 ? "win-x86" : "win-x64");
+            path = Path.Combine(path, "native");
+            path = Path.Combine(path, "pdfium.dll");
 
             return File.Exists(path) && LoadLibrary(path) != IntPtr.Zero;
         }
